@@ -1,0 +1,43 @@
+.nav {
+    width: max-content;
+    z-index: 1;
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    background: rgba(20, 86, 145, 0.3);
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    border-radius: 30px;
+    /* box-shadow: .1px .1px .5px 0.5px rgb(9, 56, 196); */
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px;
+    gap: .8rem;
+}
+ 
+ .nav a{
+     color: rgb(255, 241, 214);
+     text-decoration: none;
+     font-size: 1.2rem;
+     padding: 10px;
+     display: block;
+     transition: all 0.3s ease-in-out;
+ }
+ .active{
+     position: relative;
+     color: #02ffe7 !important;
+ }
+ .active::before{
+    content: '';
+    position: absolute;
+    left: 10%;
+    top: 18%;
+    width: 2rem;
+    height: 2rem;
+    background: rgba(15, 10, 1, 0.19);
+    transition: .5s ease;
+    border-radius: 50%;
+ }
+ 

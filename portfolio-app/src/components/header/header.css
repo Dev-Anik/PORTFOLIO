@@ -1,0 +1,144 @@
+.header{
+margin-top: 50px;
+
+text-align: center;
+
+}
+h5{
+    margin-top: 20px;
+}
+
+.myself{
+    text-align: center;
+
+    width: 300px;
+    margin-top: 40px !important;
+    padding: 0;
+    margin: auto;
+    
+
+}
+.myself img{
+    width: 265px;
+    height: 350px;
+    padding: 0;
+    background: linear-gradient(#00f3ff,transparent);
+    bottom: 0;
+    border-radius: 12rem 12rem 0 0;
+
+}
+
+.scroll-down {
+    position: absolute;
+    right: 15rem;
+    bottom: 3rem;
+    }
+    .scroll-down a{
+        writing-mode:vertical-rl !important;
+        color: #00f3ff;
+        letter-spacing: .2rem;
+        word-spacing: .5rem;
+        font-size: .8rem;
+    }
+
+/*------------------------------------------
+---------------Cv and Let's Talk------------
+-------------------------------------------*/
+.cv ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: auto;
+    margin-top: 30px;
+    width: 250px;
+}
+
+.cv button{
+    background: transparent;
+    border: 1px solid rgb(32, 227, 241);
+    border-radius: 5px;
+    color:   rgb(32, 227, 241);
+    padding: 8px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.cv button:hover{
+    background: rgb(32, 227, 241);
+    color: black;
+}
+
+
+/*------------------------------------------
+---------------Socials Buttons--------------
+-------------------------------------------*/
+.social{
+    display:flex;
+    flex-direction: column;
+    color: #00f3ff;
+    position: absolute;
+    left: 15rem;
+    bottom: 3rem;
+
+}
+.social a{
+    padding: 10px 0px;
+}
+.social::after{
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background-color: #00f3ff;
+    margin-left: .5rem;
+}
+
+
+
+/*------------------------------------------
+------------Media Query For Tablets---------
+-------------------------------------------*/
+@media screen and (max-width:1024px) {
+    .social{
+        bottom: 27rem;
+        left: 8rem;
+        font-size: .8rem;
+    }
+    .scroll-down{
+        bottom: 27rem;
+        right: 8rem;
+    }
+}
+
+
+/*------------------------------------------
+------------Media Query For SmartPhones-----
+-------------------------------------------*/
+@media screen and (max-width:600px) {
+    h1{
+        font-size: 1.7rem !important;
+    }
+    h5{
+        margin-top: 15px;
+    }
+    .cv ul{
+        width: 215px;
+        gap: 10px;
+    }
+    .cv button{
+      
+        font-size: .9rem;
+    }
+    .social{
+        display: none;
+    }
+    .scroll-down{
+        display: none;
+    }
+    .myself img{
+        width: 200px;
+        height: 270px;
+    }
+}
+
